@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="GestionLibrairie.Views.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+     <link href="../../Assets/Lib/css/Content/bootstrap.min.css" rel="stylesheet"/>
+     <link href="../../Assets/Lib/css/Style.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+           <div class="col-2 " id="left">
+               <div class="p-2">
+               <div style="height:120px">
+                  <img src="../../Assets/Images/shopping-cart.png" width="50" height="50"/> Cart
+               </div>
+
+                <div class="mb-3">
+                   <img src="../../Assets/Images/book.png" width="50" height="50"/>
+                   <a href="Books.aspx"><label>Books</label></a>
+               </div>
+                <div class="mb-3">
+                   <img src="../../Assets/Images/textxauthors_92752.png" width="50" height="50"/>
+                   <a href="Author.aspx"><label>Authors</label></a>
+               </div>
+                <div class="mb-3">
+                   <img src="../../Assets/Images/Cartoonify.png" width="50" height="50"/>
+                   <a href="Seller.aspx"><label>Sellers</label></a>
+               </div>
+                <div class="mb-3">
+                   <img src="../../Assets/Images/category_icon_176162.png" width="50" height="50"/>
+                   <a href="Categories.aspx"><label>Categories</label></a>
+               </div>
+               </div>
+               <br /><br /><br /><br /><br /><br /><br />
+                <div  class="p-2">
+                   <img src="../../Assets/Images/home.png" width="50" height="50"/>
+                   <a href="../Login.aspx"><label>Logout</label></a>
+               </div>
+
+             </div>
+
+               
+  <div class="col-10">
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MyContent" runat="server">
+             
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+  </div>
+
+ </div>
+</div>
+
+</body>
+</html>
